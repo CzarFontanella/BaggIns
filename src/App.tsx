@@ -5,7 +5,7 @@ import Router from "./Router";
 function App() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-950">
-      <header className="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-slate-700">
+      <header className="sticky top-0 z-50 bg-gray-950/80 backdrop-blur-sm border-slate-700">
         <NavBar />
         <AccentLine />
       </header>

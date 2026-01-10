@@ -9,12 +9,12 @@ import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
   const navItems = [
-    { to: "/home", icon: House, label: "Home" },
-    { to: "/about", icon: BookOpen, label: "About" },
+    { to: "/home", icon: House, label: "Ínicio" },
+    { to: "/about", icon: BookOpen, label: "Sobre" },
   ];
 
   return (
-    <nav className="w-full h-16 flex items-center justify-between px-6">
+    <nav className="w-full h-16 flex items-center justify-between px-12">
       <div className="flex items-center gap-2">
         <CircleDollarSign className="w-8 h-8 text-lime-500" />
         <span className="text-xl font-bold text-white">BaggIns</span>
