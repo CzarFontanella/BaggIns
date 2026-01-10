@@ -13,7 +13,7 @@ export default function NavItem({
   const Icon = icon;
   const linkBase =
     "relative inline-flex h-12 items-center gap-4 rounded-md px-4 text-base font-semibold leading-none transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white/0 group";
-  const linkInactive = "text-gray-500 hover:text-gray-300 hover:bg-black/5";
+  const linkInactive = "text-gray-400 hover:text-gray-300 hover:bg-black/5";
   return (
     <NavLink
       to={to}
