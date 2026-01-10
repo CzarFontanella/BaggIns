@@ -4,6 +4,6 @@ import UserHome from "./UserHome";
 export default function Home() {
   return (
     // Renderização adaptativa baseada em autenticação do usuário
-    <>{true ? <UserHome /> : <UnsignedHome />}</>
+    <>{false ? <UserHome /> : <UnsignedHome />}</>
   );
 }
