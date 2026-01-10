@@ -35,7 +35,7 @@ export default function UnsignedHome() {
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold text-white leading-tight">
                 Controle suas{" "}
-                <span className="bg-gradient-to-r from-[#34d81e] to-[#00ac0e] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-lime-500 to-green-800 bg-clip-text text-transparent">
                   finanças
                 </span>{" "}
                 de forma inteligente!
