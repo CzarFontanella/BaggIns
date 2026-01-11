@@ -13,7 +13,7 @@ function App() {
         <Router />
       </main>
       <footer className="border-t border-slate-700">
-        <div className="bg-gray-900 py-4 text-center text-slate-400">
+        <div className="bg-gray-900 py-2 text-center text-slate-400">
           <p>&copy; 2026 BaggIns. Todos os direitos reservados.</p>
         </div>
       </footer>
