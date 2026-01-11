@@ -2,7 +2,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Login from "./pages/Login/Login";
-import Signup from "./pages/Signup/Signup";
+import Signup from "./pages/Login/Signup";
 
 export default function Router() {
   return (
