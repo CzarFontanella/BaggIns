@@ -8,11 +8,19 @@ export default function Router() {
   return (
     <Routes>
       <Route path="*" element={<Navigate to="/home" />} />
-      <Route path="/home" element={<Home />} />
+
+      <Route path="/home" element={<Home />}>
+        <Route index element={<div>Dashboard Content</div>} />
+        <Route path="expenses" element={<div>Expenses Content</div>} />
+        <Route path="cards" element={<div>Cards Content</div>} />
+        <Route path="settings" element={<div>Settings Content</div>} />
+      </Route>
+      
       <Route path="/about" element={<About />} />
 
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/logout" element={<Navigate to="/" />} />
     </Routes>
   );
 }
