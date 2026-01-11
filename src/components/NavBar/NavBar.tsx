@@ -5,7 +5,6 @@ import {
   House,
 } from "lucide-react";
 import NavItem from "./NavItem";
-import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
   const navItems = [
@@ -19,21 +18,15 @@ export default function NavBar() {
         <CircleDollarSign className="w-8 h-8 text-lime-500" />
         <span className="text-xl font-bold text-white">BaggIns</span>
       </div>
-      <ul className="flex space-x-4">
+      <ul className="flex space-x-4 absolute left-1/2 -translate-x-1/2">
         {navItems.map(({ to, icon: Icon, label }) => (
           <li key={to}>
             <NavItem to={to} icon={Icon} label={label} />
           </li>
         ))}
       </ul>
-      <div className="flex items-center gap-4">
+      <div className="flex items-center">
         <NavItem to="/login" icon={CircleUserRound} label="Login" />
-        <NavLink
-          to="/signup"
-          className="flex items-center bg-lime-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-semibold transition"
-        >
-          Cadastre-se
-        </NavLink>
       </div>
     </nav>
   );
